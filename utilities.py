@@ -177,13 +177,3 @@ def send_email(from_email, to_emails, subject, body, api=EMAIL_API_KEY):
         print("Email sent.")
     except Exception as e:
         print("Email not sent", e)
-
-
-import os
-
-import streamlit as st
-from helpers import *
-
-from_email = "engrmountain@gmail.com"
-to_emails = ["nzuteokafor@gmail.com"]
-subject = "AI TLDR Weekly Newsletter"

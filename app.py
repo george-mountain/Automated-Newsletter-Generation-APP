@@ -2,6 +2,7 @@ import streamlit as st
 from utilities import *
 
 EMAIL_API_KEY = os.getenv("EMAIL_API_KEY")
+FROM_EMAIL = os.getenv("EMAIL_ACCOUNT")
 
 
 def main():
@@ -54,7 +55,7 @@ def main():
             else:
                 try:
                     send_email(
-                        from_email="engrmountain@gmail.com",
+                        from_email=FROM_EMAIL,
                         to_emails=to_emails,
                         subject="AI TLDR Weekly Newsletter",
                         body=st.session_state.state["newsletter_thread"],
