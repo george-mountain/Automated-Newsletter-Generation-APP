@@ -6,9 +6,9 @@ Pillow==9.3.0
 requests==2.31.0
 streamlit==1.29.0
 streamlit-chat==0.1.1
-torch==2.1.2+cu118
-torchaudio==2.1.2+cu118
-torchvision==0.16.2+cu118
+torch
+torchaudio
+torchvision
 transformers==4.36.2
 unstructured==0.11.6
 
